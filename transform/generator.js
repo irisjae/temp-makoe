@@ -1,6 +1,7 @@
 var auto = require ('__auto')
 auto (() => {
         var next = auto .frame ('next')
+	next .querySelector ('title') .remove ()
         Array .from (next .querySelectorAll ('#hint[for="anchor"]')) .forEach (x => {
                 x .outerHTML = auto .anchor_ify (x);
         })

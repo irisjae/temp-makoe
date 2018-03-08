@@ -8,3 +8,6 @@ svg {
 	display: block;
 	margin: 0 auto;
 }
+a {
+	cursor: pointer;
+}

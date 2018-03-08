@@ -25,7 +25,7 @@ require ('koa-qs') (new (require ('koa')) ())
 	.use (require ('koa-morgan') ('combined'))
 	.use (require ('koa-bodyparser') ())
 	.use (require ('koa-json') ())
-	.use (require ('koa-static') (__dirname))
+	.use (require ('koa-static') (__dirname, { extensions: ['html'] }))
 	
 	.listen (port);
 
