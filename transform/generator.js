@@ -1,0 +1,17 @@
+var auto = require ('__auto')
+auto (() => {
+        var next = auto .frame ('next')
+        Array .from (next .querySelectorAll ('#hint[for="anchor"]')) .forEach (x => {
+                x .outerHTML = auto .anchor_ify (x);
+        })
+        Array .from (next .querySelectorAll ('#hint[for=input]')) .forEach (x => {
+                x .outerHTML = auto .input_ify (x)
+        })
+        Array .from (next .querySelectorAll ('#hint[for="text-area"]')) .forEach (x => {
+                x .outerHTML = auto .textarea_ify (x)
+        })
+        Array .from (next .querySelectorAll ('#hint[for="select"]')) .forEach (x => {
+                x .outerHTML = auto .select_ify (x);
+        })
+        return next
+})

@@ -3,12 +3,12 @@ cd "$(dirname $0)"
 
 cd ..
 
-./transform/svg.sh > scenes/next.svg
+./transform/svg.sh > dist/next.svg
 
-cat scenes/base.html
+cat src/base.html
 echo
 echo "<script>"
-cat interact/next.js
+cat src/next.js
 echo "</script>"
 echo
-cat scenes/next.svg
+cat dist/next.svg

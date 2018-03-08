@@ -2,4 +2,4 @@
 cd "$(dirname $0)"
 cd ..
 
-cat next.js | node transform/svg.js
+cat transform/generator.js | node transform/svg.js
