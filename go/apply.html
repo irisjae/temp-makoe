@@ -321,7 +321,26 @@ document .addEventListener ('DOMContentLoaded', () => {
 						clouds .style .background = 'black'
 						clouds .style .opacity = 0.6
 						document .body .appendChild (clouds)
-						fetch ('url')
+						Promise .resolve ()
+						.then (() =>
+							fetch ('/send-apply', {
+								headers: {
+									'Accept': 'application/json',
+									'Content-Type': 'application/json'
+								},
+								method: 'POST',
+								body: JSON .stringify ({
+									school_name: school_name (),
+									group: group (),
+									teacher_name: teacher_name (),
+									teacher_email: teacher_email (),
+									teacher_mobile: teacher_mobile (),
+									students_info: students_info (),
+									description: description (),
+									recommendation: recommendation ()
+								})
+							})
+						)
 						.then (x => x .json ())
 						.then (x => {
 							if (error_of (x))
