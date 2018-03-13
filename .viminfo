@@ -12,7 +12,7 @@
 ~h
 # Command Line History (newest to oldest):
 :q
-|2,0,1520578913,,"q"
+|2,0,1520953752,,"q"
 :x
 |2,0,1520577072,,"x"
 :w
@@ -67,230 +67,241 @@
 |3,1,36,0,1,0,1520577071,"ificate"
 
 # File marks:
-'0  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
-|4,48,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
-'1  1  0  ~/go/applications/ac41daff-c85c-431f-bda6-c30e91d41644
-|4,49,1,0,1520578890,"~/go/applications/ac41daff-c85c-431f-bda6-c30e91d41644"
-'2  1  36193  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
-|4,50,1,36193,1520578329,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
-'3  1  0  ~/go/applications/c585637a-2f26-451a-9e02-08414fc8261c
-|4,51,1,0,1520577440,"~/go/applications/c585637a-2f26-451a-9e02-08414fc8261c"
-'4  52  5  ~/go/serve.js
-|4,52,52,5,1520577072,"~/go/serve.js"
-'5  46  14  ~/go/serve.js
-|4,53,46,14,1520576916,"~/go/serve.js"
-'6  46  14  ~/go/serve.js
-|4,54,46,14,1520576916,"~/go/serve.js"
-'7  1  24  ~/to-go.sh
-|4,55,1,24,1520571868,"~/to-go.sh"
-'8  28  77  ~/go/serve.js
-|4,56,28,77,1520570164,"~/go/serve.js"
-'9  28  77  ~/go/serve.js
-|4,57,28,77,1520570164,"~/go/serve.js"
+'0  97  0  ~/prod.log
+|4,48,97,0,1520953752,"~/prod.log"
+'1  82  0  ~/prod.log
+|4,49,82,0,1520953692,"~/prod.log"
+'2  82  0  ~/prod.log
+|4,50,82,0,1520953692,"~/prod.log"
+'3  81  0  ~/prod.log
+|4,51,81,0,1520953671,"~/prod.log"
+'4  81  0  ~/prod.log
+|4,52,81,0,1520953671,"~/prod.log"
+'5  81  0  ~/prod.log
+|4,53,81,0,1520953671,"~/prod.log"
+'6  81  0  ~/prod.log
+|4,54,81,0,1520953671,"~/prod.log"
+'7  1  0  ~/prod.log
+|4,55,1,0,1520953528,"~/prod.log"
+'8  1  0  ~/prod.log
+|4,56,1,0,1520953528,"~/prod.log"
+'9  1  0  ~/prod.log
+|4,57,1,0,1520953528,"~/prod.log"
 
 # Jumplist (newest first):
+-'  97  0  ~/prod.log
+|4,39,97,0,1520953752,"~/prod.log"
+-'  82  0  ~/prod.log
+|4,39,82,0,1520953748,"~/prod.log"
+-'  82  0  ~/prod.log
+|4,39,82,0,1520953692,"~/prod.log"
+-'  81  0  ~/prod.log
+|4,39,81,0,1520953689,"~/prod.log"
+-'  81  0  ~/prod.log
+|4,39,81,0,1520953689,"~/prod.log"
+-'  81  0  ~/prod.log
+|4,39,81,0,1520953671,"~/prod.log"
+-'  1  0  ~/prod.log
+|4,39,1,0,1520953619,"~/prod.log"
+-'  1  0  ~/prod.log
+|4,39,1,0,1520953619,"~/prod.log"
+-'  1  0  ~/prod.log
+|4,39,1,0,1520953619,"~/prod.log"
+-'  1  0  ~/prod.log
+|4,39,1,0,1520953528,"~/prod.log"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953455,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953455,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953455,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953455,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953455,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953455,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953455,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953455,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953455,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953455,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953455,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953455,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953455,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953455,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953455,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953455,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953380,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953380,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953380,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953380,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953380,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953380,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953380,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953380,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953380,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953380,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953380,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953380,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953380,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953380,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953380,"~/to-go.sh"
+-'  1  0  ~/to-go.sh
+|4,39,1,0,1520953380,"~/to-go.sh"
 -'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
 |4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
--'  1  0  ~/go/applications/ac41daff-c85c-431f-bda6-c30e91d41644
-|4,39,1,0,1520578890,"~/go/applications/ac41daff-c85c-431f-bda6-c30e91d41644"
--'  1  0  ~/go/applications/ac41daff-c85c-431f-bda6-c30e91d41644
-|4,39,1,0,1520578890,"~/go/applications/ac41daff-c85c-431f-bda6-c30e91d41644"
--'  1  36193  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
-|4,39,1,36193,1520578329,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
--'  1  36193  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
-|4,39,1,36193,1520578329,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
--'  1  0  ~/go/applications/c585637a-2f26-451a-9e02-08414fc8261c
-|4,39,1,0,1520577440,"~/go/applications/c585637a-2f26-451a-9e02-08414fc8261c"
--'  1  0  ~/go/applications/c585637a-2f26-451a-9e02-08414fc8261c
-|4,39,1,0,1520577440,"~/go/applications/c585637a-2f26-451a-9e02-08414fc8261c"
--'  1  0  ~/go/applications/c585637a-2f26-451a-9e02-08414fc8261c
-|4,39,1,0,1520577440,"~/go/applications/c585637a-2f26-451a-9e02-08414fc8261c"
--'  1  0  ~/go/applications/c585637a-2f26-451a-9e02-08414fc8261c
-|4,39,1,0,1520577440,"~/go/applications/c585637a-2f26-451a-9e02-08414fc8261c"
--'  1  0  ~/go/applications/c585637a-2f26-451a-9e02-08414fc8261c
-|4,39,1,0,1520577440,"~/go/applications/c585637a-2f26-451a-9e02-08414fc8261c"
--'  1  0  ~/go/applications/c585637a-2f26-451a-9e02-08414fc8261c
-|4,39,1,0,1520577440,"~/go/applications/c585637a-2f26-451a-9e02-08414fc8261c"
--'  1  0  ~/go/applications/c585637a-2f26-451a-9e02-08414fc8261c
-|4,39,1,0,1520577440,"~/go/applications/c585637a-2f26-451a-9e02-08414fc8261c"
--'  1  0  ~/go/applications/c585637a-2f26-451a-9e02-08414fc8261c
-|4,39,1,0,1520577440,"~/go/applications/c585637a-2f26-451a-9e02-08414fc8261c"
--'  52  5  ~/go/serve.js
-|4,39,52,5,1520577072,"~/go/serve.js"
--'  52  5  ~/go/serve.js
-|4,39,52,5,1520577072,"~/go/serve.js"
--'  52  5  ~/go/serve.js
-|4,39,52,5,1520577072,"~/go/serve.js"
--'  52  5  ~/go/serve.js
-|4,39,52,5,1520577072,"~/go/serve.js"
--'  52  5  ~/go/serve.js
-|4,39,52,5,1520577072,"~/go/serve.js"
--'  52  5  ~/go/serve.js
-|4,39,52,5,1520577072,"~/go/serve.js"
--'  52  5  ~/go/serve.js
-|4,39,52,5,1520577072,"~/go/serve.js"
--'  52  5  ~/go/serve.js
-|4,39,52,5,1520577072,"~/go/serve.js"
--'  52  5  ~/go/serve.js
-|4,39,52,5,1520577072,"~/go/serve.js"
--'  52  5  ~/go/serve.js
-|4,39,52,5,1520577072,"~/go/serve.js"
--'  52  5  ~/go/serve.js
-|4,39,52,5,1520577072,"~/go/serve.js"
--'  52  5  ~/go/serve.js
-|4,39,52,5,1520577072,"~/go/serve.js"
--'  52  5  ~/go/serve.js
-|4,39,52,5,1520577072,"~/go/serve.js"
--'  52  5  ~/go/serve.js
-|4,39,52,5,1520577072,"~/go/serve.js"
--'  52  5  ~/go/serve.js
-|4,39,52,5,1520577072,"~/go/serve.js"
--'  52  5  ~/go/serve.js
-|4,39,52,5,1520577072,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520577061,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520577061,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520577061,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520577061,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520577061,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520577061,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520577061,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520577061,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520577061,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520577061,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520577061,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520577061,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520577061,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520577061,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520577061,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520577061,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520576916,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520576916,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520576916,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520576916,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520576916,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520576916,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520576916,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520576916,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520576916,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520576916,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520576916,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520576916,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520576916,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520576916,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520576916,"~/go/serve.js"
--'  46  14  ~/go/serve.js
-|4,39,46,14,1520576916,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  6  0  ~/go/serve.js
-|4,39,6,0,1520576906,"~/go/serve.js"
--'  5  0  ~/go/serve.js
-|4,39,5,0,1520576905,"~/go/serve.js"
--'  5  0  ~/go/serve.js
-|4,39,5,0,1520576905,"~/go/serve.js"
--'  5  0  ~/go/serve.js
-|4,39,5,0,1520576905,"~/go/serve.js"
--'  5  0  ~/go/serve.js
-|4,39,5,0,1520576905,"~/go/serve.js"
--'  5  0  ~/go/serve.js
-|4,39,5,0,1520576905,"~/go/serve.js"
--'  5  0  ~/go/serve.js
-|4,39,5,0,1520576905,"~/go/serve.js"
--'  5  0  ~/go/serve.js
-|4,39,5,0,1520576905,"~/go/serve.js"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
+-'  1  0  ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
+|4,39,1,0,1520578913,"~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76"
 
 # History of marks within files (newest to oldest):
+
+> ~/prod.log
+	*	1520953748	0
+	"	97	0
+
+> ~/to-go.sh
+	*	1520953446	0
+	"	1	0
+	^	1	25
+	.	1	24
+	+	1	24
 
 > ~/go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
 	*	1520578899	0
@@ -352,13 +363,6 @@
 	+	48	0
 	+	51	1
 	+	52	5
-
-> ~/to-go.sh
-	*	1520571867	0
-	"	1	24
-	^	1	25
-	.	1	24
-	+	1	24
 
 > ~/go/.hidden/lol
 	*	1520570079	0
