@@ -95,3 +95,27 @@ vim go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76
 ls go/applications/
 vim go/applications/ac41daff-c85c-431f-bda6-c30e91d41644 
 vim go/applications/f9991795-3e99-4c87-bf1f-c93ac4395f76 
+ls
+git init
+sudo apt-get install git
+ls
+git init
+git branch deploy
+git status
+git checkout -b deploy
+git branch
+git branch -a
+git status
+git add .
+git commit -m 'checkpoint'
+git config --global user.email "temp@temp"
+git config --global user.name "Some One"
+git commit -m 'checkpoint'
+git remote -a
+git branch -a
+git remote add sync https://github.com/irisjay/temp-makgo.git
+git push sync
+git push --set-upstream sync deploy
+git push sync
+ls
+vim go/styles.css 
