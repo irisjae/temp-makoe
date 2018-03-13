@@ -1,18 +1,3 @@
-<!doctype html>
-
-<title>建構中的歷史|History is in the Making</title>
-<meta charset="utf-8">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, height=device-height, viewport-fit=cover, user-scalable=no">
-<link rel="stylesheet" type="text/css" href="styles.css" />
-
-<script src="./scripts/S.js"></script>
-<script src="./scripts/ramda.js"></script>
-<script src="./scripts/OoO.js"></script>
-
-<script>
-</script>
-
 <svg width="1440" height="2228" viewBox="0 0 1440 2228" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
 <desc>Created using Figma</desc>
@@ -982,7 +967,7 @@
 <path id="path214_fill" d="M 20.9002 19.8324C 18.2976 22.0951 14.9685 23.3478 11.5198 23.3624C 4.57984 23.3624 -0.000175781 18.7824 -0.000175781 11.7824C -0.000175781 7.17242 2.0499 3.16242 5.3299 1.39242C 7.18384 0.439106 9.24563 -0.0385411 11.3299 0.00242404C 15.2499 0.00242404 18.2102 1.48242 19.6702 4.17242C 20.0917 4.96494 20.3978 5.81347 20.5799 6.69243L 17.8699 7.45244C 17.7126 6.75315 17.4569 6.07976 17.1102 5.45244C 16.496 4.50358 15.6381 3.73681 14.6268 3.23202C 13.6155 2.72724 12.4877 2.50292 11.3602 2.58243C 6.18018 2.58243 3.09016 5.96243 3.09016 11.5824C 3.09016 17.2024 6.18 20.6724 11.43 20.6724C 13.1424 20.6597 14.8243 20.2161 16.3201 19.3824C 16.928 19.1214 17.4914 18.7672 17.9901 18.3324L 17.9901 14.1024L 11.3602 14.1024L 11.3602 11.4524L 20.93 11.4524L 20.9002 19.8324Z"></path>
 <path id="path215_stroke" d="M -1.00002 0L -1.00002 144L 0.99998 144L 0.99998 0L -1.00002 0Z"></path>
 <path id="path216_fill" d="M 0 0L 251 0L 251 218L 0 218L 0 0Z"></path>
-<image id="image0" width="600" height="600" preserveAspectRatio="none" xlink:href="assets/contact/0.png"></image>
-<image id="image1" width="902" height="417" preserveAspectRatio="none" xlink:href="assets/contact/1.png"></image>
+<image id="image0" width="600" height="600" preserveAspectRatio="none" xlink:href="assets/liquefied/0.png"></image>
+<image id="image1" width="902" height="417" preserveAspectRatio="none" xlink:href="assets/liquefied/1.png"></image>
 </defs>
 </svg>
