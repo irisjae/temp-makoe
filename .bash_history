@@ -219,3 +219,17 @@ vim to-go.sh
 ls
 vim to-go.sh 
 ls
+ls
+screen -ls
+screen -r x
+screen -r definitive
+screen -r x
+screen -S definitive
+screen -r x
+screen -r definitive
+screen -r x
+screen -r definitive
+screen -r x
+ls
+screen -ls
+screen -r x
