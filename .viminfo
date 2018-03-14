@@ -10,11 +10,21 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Substitute Search Pattern:
+~MSle0~&span
+
+# Last Substitute String:
+$div
+
 # Command Line History (newest to oldest):
 :q
-|2,0,1520988702,,"q"
+|2,0,1521021781,,"q"
 :w
-|2,0,1520988687,,"w"
+|2,0,1521020623,,"w"
+:'<,'>s/span/div/gc
+|2,0,1521020502,,"'<,'>s/span/div/gc"
+:'<,'>%s/span/div/gc
+|2,0,1521020496,,"'<,'>%s/span/div/gc"
 :set noautoindent
 |2,0,1520988366,,"set noautoindent"
 :set noindent
@@ -25,6 +35,8 @@
 |2,0,1520577072,,"x"
 
 # Search String History (newest to oldest):
+? span
+|2,1,1521020502,,"span"
 
 # Expression History (newest to oldest):
 
@@ -33,9 +45,9 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
-""1	LINE	0
+"1	LINE	0
 	
-|3,1,1,1,1,0,1520988685,""
+|3,0,1,1,1,0,1520988685,""
 "2	LINE	0
 	
 		font-family: sans-serif;
@@ -72,33 +84,37 @@
 "q@	CHAR	0
 	c0var€kD€kD
 |3,2,26,0,1,0,1520572775,"c0var€kD€kD"
-"-	CHAR	0
-	ificate
-|3,0,36,0,1,0,1520577071,"ificate"
+""-	CHAR	0
+	...
+|3,1,36,0,1,0,1521020617,"..."
 
 # File marks:
-'0  2  1  ~/go/index.html
-|4,48,2,1,1520988702,"~/go/index.html"
-'1  12  1  ~/go/index.html
-|4,49,12,1,1520988401,"~/go/index.html"
+'0  12  89  ~/go/index.html
+|4,48,12,89,1521021781,"~/go/index.html"
+'1  2  1  ~/go/index.html
+|4,49,2,1,1520988702,"~/go/index.html"
 '2  2  1  ~/go/index.html
-|4,50,2,1,1520988401,"~/go/index.html"
-'3  1  0  ~/go/index.html
-|4,51,1,0,1520987904,"~/go/index.html"
-'4  1  0  ~/go/index.html
-|4,52,1,0,1520987904,"~/go/index.html"
-'5  1  0  ~/go/index.html
-|4,53,1,0,1520987904,"~/go/index.html"
+|4,50,2,1,1520988702,"~/go/index.html"
+'3  2  1  ~/go/index.html
+|4,51,2,1,1520988401,"~/go/index.html"
+'4  12  1  ~/go/index.html
+|4,52,12,1,1520988401,"~/go/index.html"
+'5  2  1  ~/go/index.html
+|4,53,2,1,1520988401,"~/go/index.html"
 '6  1  0  ~/go/index.html
 |4,54,1,0,1520987904,"~/go/index.html"
-'7  97  0  ~/prod.log
-|4,55,97,0,1520953752,"~/prod.log"
-'8  82  0  ~/prod.log
-|4,56,82,0,1520953692,"~/prod.log"
-'9  82  0  ~/prod.log
-|4,57,82,0,1520953692,"~/prod.log"
+'7  1  0  ~/go/index.html
+|4,55,1,0,1520987904,"~/go/index.html"
+'8  1  0  ~/go/index.html
+|4,56,1,0,1520987904,"~/go/index.html"
+'9  1  0  ~/go/index.html
+|4,57,1,0,1520987904,"~/go/index.html"
 
 # Jumplist (newest first):
+-'  12  89  ~/go/index.html
+|4,39,12,89,1521021781,"~/go/index.html"
+-'  2  1  ~/go/index.html
+|4,39,2,1,1521020402,"~/go/index.html"
 -'  2  1  ~/go/index.html
 |4,39,2,1,1520988702,"~/go/index.html"
 -'  12  1  ~/go/index.html
@@ -107,6 +123,10 @@
 |4,39,2,1,1520988401,"~/go/index.html"
 -'  3  0  ~/go/index.html
 |4,39,3,0,1520988388,"~/go/index.html"
+-'  3  0  ~/go/index.html
+|4,39,3,0,1520988388,"~/go/index.html"
+-'  1  64  ~/go/index.html
+|4,39,1,64,1520988314,"~/go/index.html"
 -'  1  64  ~/go/index.html
 |4,39,1,64,1520988314,"~/go/index.html"
 -'  1  64  ~/go/index.html
@@ -129,6 +149,22 @@
 |4,39,97,0,1520953752,"~/prod.log"
 -'  97  0  ~/prod.log
 |4,39,97,0,1520953752,"~/prod.log"
+-'  97  0  ~/prod.log
+|4,39,97,0,1520953752,"~/prod.log"
+-'  97  0  ~/prod.log
+|4,39,97,0,1520953752,"~/prod.log"
+-'  97  0  ~/prod.log
+|4,39,97,0,1520953752,"~/prod.log"
+-'  97  0  ~/prod.log
+|4,39,97,0,1520953752,"~/prod.log"
+-'  97  0  ~/prod.log
+|4,39,97,0,1520953752,"~/prod.log"
+-'  97  0  ~/prod.log
+|4,39,97,0,1520953752,"~/prod.log"
+-'  97  0  ~/prod.log
+|4,39,97,0,1520953752,"~/prod.log"
+-'  97  0  ~/prod.log
+|4,39,97,0,1520953752,"~/prod.log"
 -'  82  0  ~/prod.log
 |4,39,82,0,1520953748,"~/prod.log"
 -'  82  0  ~/prod.log
@@ -145,6 +181,38 @@
 |4,39,82,0,1520953748,"~/prod.log"
 -'  82  0  ~/prod.log
 |4,39,82,0,1520953748,"~/prod.log"
+-'  82  0  ~/prod.log
+|4,39,82,0,1520953748,"~/prod.log"
+-'  82  0  ~/prod.log
+|4,39,82,0,1520953748,"~/prod.log"
+-'  82  0  ~/prod.log
+|4,39,82,0,1520953748,"~/prod.log"
+-'  82  0  ~/prod.log
+|4,39,82,0,1520953748,"~/prod.log"
+-'  82  0  ~/prod.log
+|4,39,82,0,1520953748,"~/prod.log"
+-'  82  0  ~/prod.log
+|4,39,82,0,1520953748,"~/prod.log"
+-'  82  0  ~/prod.log
+|4,39,82,0,1520953748,"~/prod.log"
+-'  82  0  ~/prod.log
+|4,39,82,0,1520953748,"~/prod.log"
+-'  82  0  ~/prod.log
+|4,39,82,0,1520953692,"~/prod.log"
+-'  82  0  ~/prod.log
+|4,39,82,0,1520953692,"~/prod.log"
+-'  82  0  ~/prod.log
+|4,39,82,0,1520953692,"~/prod.log"
+-'  82  0  ~/prod.log
+|4,39,82,0,1520953692,"~/prod.log"
+-'  82  0  ~/prod.log
+|4,39,82,0,1520953692,"~/prod.log"
+-'  82  0  ~/prod.log
+|4,39,82,0,1520953692,"~/prod.log"
+-'  82  0  ~/prod.log
+|4,39,82,0,1520953692,"~/prod.log"
+-'  82  0  ~/prod.log
+|4,39,82,0,1520953692,"~/prod.log"
 -'  82  0  ~/prod.log
 |4,39,82,0,1520953692,"~/prod.log"
 -'  82  0  ~/prod.log
@@ -194,7 +262,37 @@
 -'  81  0  ~/prod.log
 |4,39,81,0,1520953689,"~/prod.log"
 -'  81  0  ~/prod.log
-|4,39,81,0,1520953671,"~/prod.log"
+|4,39,81,0,1520953689,"~/prod.log"
+-'  81  0  ~/prod.log
+|4,39,81,0,1520953689,"~/prod.log"
+-'  81  0  ~/prod.log
+|4,39,81,0,1520953689,"~/prod.log"
+-'  81  0  ~/prod.log
+|4,39,81,0,1520953689,"~/prod.log"
+-'  81  0  ~/prod.log
+|4,39,81,0,1520953689,"~/prod.log"
+-'  81  0  ~/prod.log
+|4,39,81,0,1520953689,"~/prod.log"
+-'  81  0  ~/prod.log
+|4,39,81,0,1520953689,"~/prod.log"
+-'  81  0  ~/prod.log
+|4,39,81,0,1520953689,"~/prod.log"
+-'  81  0  ~/prod.log
+|4,39,81,0,1520953689,"~/prod.log"
+-'  81  0  ~/prod.log
+|4,39,81,0,1520953689,"~/prod.log"
+-'  81  0  ~/prod.log
+|4,39,81,0,1520953689,"~/prod.log"
+-'  81  0  ~/prod.log
+|4,39,81,0,1520953689,"~/prod.log"
+-'  81  0  ~/prod.log
+|4,39,81,0,1520953689,"~/prod.log"
+-'  81  0  ~/prod.log
+|4,39,81,0,1520953689,"~/prod.log"
+-'  81  0  ~/prod.log
+|4,39,81,0,1520953689,"~/prod.log"
+-'  81  0  ~/prod.log
+|4,39,81,0,1520953689,"~/prod.log"
 -'  81  0  ~/prod.log
 |4,39,81,0,1520953671,"~/prod.log"
 -'  81  0  ~/prod.log
@@ -209,107 +307,23 @@
 |4,39,81,0,1520953671,"~/prod.log"
 -'  81  0  ~/prod.log
 |4,39,81,0,1520953671,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953619,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953619,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953619,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953619,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953619,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953619,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953619,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953619,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953619,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953619,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953619,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953619,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953619,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953619,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953619,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953619,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953619,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953619,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953619,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953619,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953619,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953619,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953619,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953619,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953528,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953528,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953528,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953528,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953528,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953528,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953528,"~/prod.log"
--'  1  0  ~/prod.log
-|4,39,1,0,1520953528,"~/prod.log"
--'  1  0  ~/to-go.sh
-|4,39,1,0,1520953455,"~/to-go.sh"
--'  1  0  ~/to-go.sh
-|4,39,1,0,1520953455,"~/to-go.sh"
--'  1  0  ~/to-go.sh
-|4,39,1,0,1520953455,"~/to-go.sh"
--'  1  0  ~/to-go.sh
-|4,39,1,0,1520953455,"~/to-go.sh"
--'  1  0  ~/to-go.sh
-|4,39,1,0,1520953455,"~/to-go.sh"
--'  1  0  ~/to-go.sh
-|4,39,1,0,1520953455,"~/to-go.sh"
--'  1  0  ~/to-go.sh
-|4,39,1,0,1520953455,"~/to-go.sh"
--'  1  0  ~/to-go.sh
-|4,39,1,0,1520953455,"~/to-go.sh"
--'  1  0  ~/to-go.sh
-|4,39,1,0,1520953455,"~/to-go.sh"
--'  1  0  ~/to-go.sh
-|4,39,1,0,1520953455,"~/to-go.sh"
--'  1  0  ~/to-go.sh
-|4,39,1,0,1520953455,"~/to-go.sh"
--'  1  0  ~/to-go.sh
-|4,39,1,0,1520953455,"~/to-go.sh"
--'  1  0  ~/to-go.sh
-|4,39,1,0,1520953455,"~/to-go.sh"
+-'  81  0  ~/prod.log
+|4,39,81,0,1520953671,"~/prod.log"
+-'  81  0  ~/prod.log
+|4,39,81,0,1520953671,"~/prod.log"
 
 # History of marks within files (newest to oldest):
 
 > ~/go/index.html
-	*	1520988687	0
-	"	2	1
-	.	2	0
+	*	1521020623	0
+	"	12	89
+	^	12	90
+	.	12	89
 	+	1	11
 	+	12	64
 	+	12	0
 	+	2	0
+	+	12	89
 
 > ~/prod.log
 	*	1520953748	0
