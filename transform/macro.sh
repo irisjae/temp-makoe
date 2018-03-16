@@ -18,5 +18,6 @@ done
 
 ./transform/page.sh > dist/next.html
 
+rm -r "go/assets/$next"
 mv "assets/liquefied/" "go/assets/$next"
 cat dist/next.html | sed s,assets/liquefied,assets/$next, > "go/$next.html"
