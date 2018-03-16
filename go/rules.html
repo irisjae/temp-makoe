@@ -14,9 +14,9 @@
 	var is_firefox = typeof InstallTrigger !== 'undefined';
 	var is_safari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
 	var is_ie = /*@cc_on!@*/false || !!document.documentMode;
-	var is_edge = !is_IE && !!window.StyleMedia;
+	var is_edge = !is_ie && !!window.StyleMedia;
 	var is_chrome = !!window.chrome && !!window.chrome.webstore;
-	var is_blink = (is_Chrome || is_Opera) && !!window.CSS;
+	var is_blink = (is_chrome || is_opera) && !!window.CSS;
 
 	if (! is_firefox && ! is_chrome ) {
 		var convince = document.createElement('better-browser')
