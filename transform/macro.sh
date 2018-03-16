@@ -5,6 +5,11 @@ cd ..
 
 next="$1"
 
+[ -f "scenes/$next.svg" ] || {
+	echo "$next does not seem to be a page?"
+	exit 1
+}
+
 rm src/*
 cp scenes/base.html src/base.html
 find scenes -name "$next.*" | while read file; do
