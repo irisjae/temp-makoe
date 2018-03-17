@@ -25,7 +25,6 @@
 			[] .forEach .call (document .querySelectorAll ('a'), function (node) {
 				['click', 'touchstart', 'mousedown'] .forEach (function (x) {
 					node .addEventListener (x, function () {
-						alert(x)
 						window .location .href = node .getAttribute ('href')
 					})
 				})
