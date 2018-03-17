@@ -3,10 +3,13 @@ body {
 }
 svg {
 	width: 100%;
-	height: auto;
+	height: 100%;
 	max-width: 1024px;
 	display: block;
 	margin: 0 auto;
+	padding: 0;
+	outline: none;
+	border: none;
 }
 a {
 	cursor: pointer;
