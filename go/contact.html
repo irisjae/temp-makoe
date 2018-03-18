@@ -10,15 +10,31 @@
 <script src="./scripts/ramda.js"></script>
 <script src="./scripts/OoO.js"></script>
 <script>
-	var is_opera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
-	var is_firefox = typeof InstallTrigger !== 'undefined';
-	var is_safari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
-	var is_ie = /*@cc_on!@*/false || !!document.documentMode;
-	var is_edge = !is_ie && !!window.StyleMedia;
-	var is_chrome = !!window.chrome && !!window.chrome.webstore;
-	var is_blink = (is_chrome || is_opera) && !!window.CSS;
+	var is_opera = false
+	var is_firefox = false
+	var is_safari = false
+	var is_ie = false
+	var is_edge = false
+	var is_chrome = false
+	var is_blink = false
 
 	var is_ios = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+
+	if ((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1) {
+		is_opera = true
+	}
+	else if (navigator.userAgent.indexOf("Chrome") != -1) {
+		is_chrome = true
+	}
+	else if (navigator.userAgent.indexOf("Safari") != -1) {
+		is_safari = true
+	}
+	else if (navigator.userAgent.indexOf("Firefox") != -1) {
+		 is_firefox = true
+	}
+	else if ((navigator.userAgent.indexOf("MSIE") != -1) || (!!document.documentMode == true )) /*IF IE > 10*/ {
+		is_ie = true
+	}  
 
 	if (! (is_firefox || is_chrome) || is_ios) {
 		document .addEventListener ('DOMContentLoaded', function () {
