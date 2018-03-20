@@ -4,12 +4,21 @@
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, height=device-height, viewport-fit=cover, user-scalable=no">
-<link rel="stylesheet" type="text/css" href="styles.css" />
+<link rel="stylesheet" type="text/css" href="/styles.css" />
 
-<script src="./scripts/S.js"></script>
-<script src="./scripts/ramda.js"></script>
-<script src="./scripts/OoO.js"></script>
+<script src="/scripts/S.js"></script>
+<script src="/scripts/ramda.js"></script>
+<script src="/scripts/OoO.js"></script>
 <script>
+	var language = window .localStorage .getItem ('language')
+
+	var location_parts = window .location .href .slice (window .location .origin .length) .split ('/')
+	var location_language = location_parts [1]
+	if (language && language !== location_language) {
+		window .location .href = Oo (location_parts, o (R .update (1, language)), o (R .join ('/')))
+	}
+
+
 	var is_opera = false
 	var is_firefox = false
 	var is_safari = false
