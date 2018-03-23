@@ -1252,19 +1252,19 @@
 <g id="Vector">
 <use xlink:href="#path388_fill" transform="translate(-360.09 3426.65)" fill="#231815"></use>
 </g>
-<a href="/eng"><g id="hint" for="anchor" href="/eng">
+<a href="/eng" tabindex="12"><g id="hint" for="anchor" href="/eng" tabindex="11">
 <use xlink:href="#path389_fill" transform="translate(44 3367)" fill="url(#paint408_linear)" fill-opacity="0.01"></use>
 </g></a>
-<a href="/chi"><g id="hint" for="anchor" href="/chi">
+<a href="/chi" tabindex="10"><g id="hint" for="anchor" href="/chi" tabindex="9">
 <use xlink:href="#path390_fill" transform="translate(-62 3367)" fill="url(#paint409_linear)" fill-opacity="0.01"></use>
 </g></a>
-<a href="contact"><g id="hint" for="anchor" href="contact">
+<a href="contact" tabindex="8"><g id="hint" for="anchor" href="contact" tabindex="7">
 <use xlink:href="#path391_fill" transform="translate(-224 3367)" fill="url(#paint410_linear)" fill-opacity="0.01"></use>
 </g></a>
-<a href="apply"><g id="hint" for="anchor" href="apply">
+<a href="apply" tabindex="6"><g id="hint" for="anchor" href="apply" tabindex="5">
 <use xlink:href="#path392_fill" transform="translate(-444 3367)" fill="url(#paint411_linear)" fill-opacity="0.01"></use>
 </g></a>
-<a href="rules"><g id="hint" for="anchor" href="rules">
+<a href="rules" tabindex="4"><g id="hint" for="anchor" href="rules" tabindex="3">
 <use xlink:href="#path393_fill" transform="translate(-674 3367)" fill="url(#paint412_linear)" fill-opacity="0.01"></use>
 </g></a>
 </g>
@@ -1350,7 +1350,7 @@
 <g id="Vector">
 <use xlink:href="#path420_stroke" transform="translate(-937.629 3347.29)"></use>
 </g>
-<a href="/"><g id="hint" for="anchor" href="/">
+<a href="/" tabindex="2"><g id="hint" for="anchor" href="/" tabindex="1">
 <use xlink:href="#path421_fill" transform="translate(-1163 3309)" fill="url(#paint440_linear)" fill-opacity="0.01"></use>
 </g></a>
 </g>
