@@ -14,3 +14,27 @@ svg {
 a {
 	cursor: pointer;
 }
+svg overflow-clip {
+	float: right;
+}
+::-webkit-credentials-auto-fill-button {
+	visibility: hidden;
+	pointer-events: none;
+	position: absolute;
+	right: 0;
+}
+::-webkit-textfield-decoration-container {
+	display: none;
+}
+::-webkit-caps-lock-indicator {
+	display: none;
+}
+::-webkit-credentials-auto-fill-button {
+	display: none;
+}
+::-ms-clear {
+	display: none;
+}
+::-ms-reveal {
+	display: none;
+}
