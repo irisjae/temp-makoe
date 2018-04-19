@@ -1,4 +1,4 @@
-var OoO = (() => {
+var OoO = (function () {
 	try {
 		var hole_marker = R .__
 	}
@@ -52,8 +52,8 @@ var OoO = (() => {
 		}
 	};
 	OoO .Oo = OoO;
-	OoO .o = x => x;
-	OoO .oO = x => x;
+	OoO .o = function (x) {return x;};
+	OoO .oO = function (x) {return x;};
 
 	return OoO;
 }) ()
