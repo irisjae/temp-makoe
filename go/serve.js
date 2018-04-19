@@ -1,3 +1,4 @@
+var fs = require ('fs-extra')
 var http = require("http");
 var https = require('https');
 
