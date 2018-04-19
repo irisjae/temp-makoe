@@ -21,7 +21,7 @@ var embed = (x, y, z) =>
                 ; x .outerHTML = auto .anchor_ify (x);
 	}})
         ; Array .from (next .querySelectorAll ('#hint[for=input]')) .forEach (x => {{
-                ; x .outerHTML = auto .input_ify (x)
+                ; x .outerHTML = auto .input_ify (x) .replace (/type=[^\s]+/g, '')
         }})
         ; Array .from (next .querySelectorAll ('#hint[for="text-area"]')) .forEach (x => {{
                 ; x .outerHTML = auto .textarea_ify (x)
