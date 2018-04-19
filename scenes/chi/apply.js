@@ -210,8 +210,8 @@ document .addEventListener ('DOMContentLoaded', () => {
                                                         var used_english = Oo (value (), o (R .any (x => x .match (/[a-zA-Z]/))))
                                                         var used_chinese = Oo (value (), o (R .any (x => x .match (/[\u3400-\u9FBF]/))))
                                                         if (used_english && used_chinese) {
-                                                                x ({ error: 'You cannot mix Chinese and English in the written description' })
-                                                                return
+                                                                //x ({ error: 'You cannot mix Chinese and English in the written description' })
+                                                                //return
                                                         }
                                                         if (used_english)
                                                                 var word_count = Oo (value (), o (R .split (/\w+/)), o (R .length))
@@ -219,7 +219,8 @@ document .addEventListener ('DOMContentLoaded', () => {
                                                                 var word_count = Oo (value (), o (R .filter (x => x .match (/[\u3400-\u9FBF]/))), o (R .length))
 							
 							if (word_count < word_limit)
-								x ({ error: 'The written description must be at least ' + word_limit + ' words' })
+								x (value ())
+								//x ({ error: 'The written description must be at least ' + word_limit + ' words' })
 							else
 								x (value ())
 						})
