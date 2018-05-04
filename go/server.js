@@ -69,10 +69,10 @@ var add_team_requests = id => stuff => slots => Oo (slots,
 	o (R .assoc (stuff .second, R .assoc ('second', R .union (slots [stuff .second] .second, [ id ]), slots [stuff .second]) )),
 	o (R .assoc (stuff .third, R .assoc ('third', R .union (slots [stuff .third] .third, [ id ]), slots [stuff .third]) )))
 var authenticate = x => y =>
-	fs .readFile ( path_of ([ __dirname , 'apps_list.json' ]) )
+	fs .readFile ( path_of ([ __dirname , 'applicants.json' ]) )
 	.then (x => JSON .parse (x))
-	.then (apps_list => {;
-		if (apps_list [x] && apps_list [x] .teacher_email == y) {}
+	.then (applicants => {;
+		if (applicants [x] && R .contains (y, applicants [x] .teacher_email)) {}
 		else {
 			;throw new Error ('Could not recognize team ID ' + x + ' and teacher email ' + y + '!') } })
 
