@@ -1,0 +1,158 @@
+{
+    "10/5/2018 Afternoon": {
+        "first": [],
+        "second": [],
+        "third": []
+    },
+    "10/5/2018 Morning": {
+        "first": [],
+        "second": [],
+        "third": []
+    },
+    "11/5/2018 Afternoon": {
+        "first": [],
+        "second": [],
+        "third": []
+    },
+    "11/5/2018 Morning": {
+        "first": [
+            "a",
+            "b"
+        ],
+        "second": [],
+        "third": []
+    },
+    "13/5/2018 Afternoon": {
+        "first": [
+            "c"
+        ],
+        "second": [],
+        "third": []
+    },
+    "13/5/2018 Morning": {
+        "first": [],
+        "second": [
+            "a"
+        ],
+        "third": []
+    },
+    "14/5/2018 Afternoon": {
+        "first": [],
+        "second": [],
+        "third": []
+    },
+    "14/5/2018 Morning": {
+        "first": [],
+        "second": [
+            "d"
+        ],
+        "third": []
+    },
+    "15/5/2018 Afternoon": {
+        "first": [],
+        "second": [],
+        "third": []
+    },
+    "15/5/2018 Morning": {
+        "first": [],
+        "second": [
+            "c"
+        ],
+        "third": []
+    },
+    "16/5/2018 Afternoon": {
+        "first": [],
+        "second": [],
+        "third": []
+    },
+    "16/5/2018 Morning": {
+        "first": [
+            "d"
+        ],
+        "second": [],
+        "third": []
+    },
+    "17/5/2018 Afternoon": {
+        "first": [],
+        "second": [
+            "e",
+            "a"
+        ],
+        "third": [
+            "a",
+            "c",
+            "d",
+            "e"
+        ]
+    },
+    "17/5/2018 Morning": {
+        "first": [],
+        "second": [],
+        "third": [
+            "e",
+            "a"
+        ]
+    },
+    "18/5/2018 Afternoon": {
+        "first": [
+            "a",
+            "c",
+            "d",
+            "e"
+        ],
+        "second": [],
+        "third": []
+    },
+    "18/5/2018 Morning": {
+        "first": [
+            "e",
+            "a"
+        ],
+        "second": [
+            "a",
+            "c",
+            "d",
+            "e"
+        ],
+        "third": []
+    },
+    "7/5/2018 Afternoon": {
+        "first": [],
+        "second": [],
+        "third": [
+            "a",
+            "b"
+        ]
+    },
+    "7/5/2018 Morning": {
+        "first": [],
+        "second": [
+            "b"
+        ],
+        "third": []
+    },
+    "8/5/2018 Afternoon": {
+        "first": [],
+        "second": [],
+        "third": [
+            "c"
+        ]
+    },
+    "8/5/2018 Morning": {
+        "first": [],
+        "second": [],
+        "third": []
+    },
+    "9/5/2018 Afternoon": {
+        "first": [],
+        "second": [],
+        "third": [
+            "d"
+        ]
+    },
+    "9/5/2018 Morning": {
+        "first": [],
+        "second": [],
+        "third": []
+    }
+}
