@@ -60,5 +60,10 @@ var embed = (x, y, z) =>
 			x .parentElement .setAttribute ('fill', '#00000000')
 			x .parentElement .innerHTML += embed ('red-cliff', '<iframe width="560" height="315" src="https://www.youtube.com/embed/h_kqgzjSA4w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
 		}})))
+	;Oo (next .querySelectorAll ('#interviews #hint[for=video]rect, #interviews #hint[for=video] rect'),
+		oO (R .forEach (x => {{
+			x .parentElement .setAttribute ('fill', '#00000000')
+			x .parentElement .innerHTML += embed ('interviews', '<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL-3gobmUv_5zn84HuoAFT65hTlhG0FHd4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
+		}})))
         return next
 })
