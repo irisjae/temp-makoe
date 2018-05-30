@@ -1,11 +1,9 @@
 cp drive/maka/rules-english.svg scenes/eng/rules.svg
-cp drive/maka/workshop-english.svg scenes/eng/workshop.svg
 cp drive/maka/contact-english.svg scenes/eng/contact.svg
 cp drive/maka/home-english.svg scenes/eng/home.svg
 cp drive/maka/news-english.svg scenes/eng/news.svg
 cp drive/maka/activities-english.svg scenes/eng/activities.svg
 cp drive/maka/rules-chinese.svg scenes/chi/rules.svg
-cp drive/maka/workshop-chinese.svg scenes/chi/workshop.svg
 cp drive/maka/contact-chinese.svg scenes/chi/contact.svg
 cp drive/maka/home-chinese.svg scenes/chi/home.svg
 cp drive/maka/news-chinese.svg scenes/chi/news.svg
