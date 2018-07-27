@@ -65,5 +65,10 @@ var embed = (x, y, z) =>
 			x .parentElement .setAttribute ('fill', '#00000000')
 			x .parentElement .innerHTML += embed ('interviews', '<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL-3gobmUv_5zn84HuoAFT65hTlhG0FHd4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
 		}})))
+	;Oo (next .querySelectorAll ('#finalists #hint[for=video]rect, #finalists #hint[for=video] rect'),
+		oO (R .forEach (x => {{
+			x .parentElement .setAttribute ('fill', '#00000000')
+			x .parentElement .innerHTML += embed ('finalists', '<iframe width="640" height="360" src="https://www.youtube.com/embed/wG5XjDhFFug?ecver=2" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
+		}})))
         return next
 })
