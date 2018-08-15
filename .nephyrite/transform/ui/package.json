@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "css": "^2.2.1",
+    "css-semdiff": "^1.1.1",
+    "esprima": "^4.0.0",
+    "fs-extra": "^5.0.0",
+    "htmltojsx": "^0.3.0",
+    "jsdom": "^11.6.2",
+    "node-sass": "^4.7.2",
+    "o-o-o-o-o": "0.0.2",
+    "ramda": "^0.25.0",
+    "surplus": "^0.5.0",
+    "svg-path-parser": "^1.1.0"
+  },
+  "link-dependencies": {
+    "__window": "./scenes/polyfill/__window"
+  },
+  "scripts": {
+    "install": "echo \"var links = require('./package.json') ['link-dependencies'] || {}; for (var package in links) { if (require ('fs') .existsSync ('node_modules/' + package)) require ('fs') .unlinkSync ('node_modules/' + package); require ('fs') .symlinkSync (require ('path') .join ('..', links [package]), 'node_modules/' + package, 'dir'); }\" | node"
+  }
+}
