@@ -103,7 +103,7 @@ module .exports = require ('koa-qs') (new (require ('koa')) ())
 			});
 	})
 	.use (require ('koa-morgan') ('combined'))
-	.use (require ('koa-body') ({ multipart: true }))
+	.use (require ('koa-body') ({ multipart: true, formidable: { maxFileSize: 20 * 1024 * 1024 * 1024 } }))
 	.use (require ('koa-json') ())
 	.use (require ('koa-router') ()
 		.post ('/send-final', (ctx, next) => 
