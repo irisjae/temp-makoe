@@ -1,8 +1,5 @@
-var R = require ('ramda')
 var fs = require ('fs-extra')
-var Oo = require ('o-o-o-o-o') .Oo
-var o = require ('o-o-o-o-o') .o
-var oO = require ('o-o-o-o-o') .oO
+var { R, T, so, go } = require ('metamorphoses')
 
 var debug = true;
 
@@ -10,20 +7,14 @@ var debug = true;
 var substring = sub => string => R .split (sub, string) .length > 1
 var slot_capacity = slot =>
 !! (! substring ('13/5/2018') (slot))?
-	!! (substring ('Morning') (slot))?
-		4
-	:!! (substring ('Noon') (slot))?
-		4
-	:!! (substring ('Afternoon') (slot))?
-		 2
+	!! (substring ('Morning') (slot)) ?  4
+	: !! (substring ('Noon') (slot)) ?  4
+	: !! (substring ('Afternoon') (slot)) ?  2
 	: 0
 :
-	!! (substring ('Morning') (slot))?
-		2
-	:!! (substring ('Noon') (slot))?
-		2
-	:!! (substring ('Afternoon') (slot))?
-		 2
+	!! (substring ('Morning') (slot)) ?  2
+	: !! (substring ('Noon') (slot)) ?  2
+	: !! (substring ('Afternoon') (slot)) ?  2
 	: 0
 var path_of = xs => require ('path') .join .apply (require ('path'), xs)
 var get_timetable = () => 
@@ -46,28 +37,28 @@ var add_to_timetable = request => {;
 	&& (! R .contains (request .team_id, tertiary_competitors))) {
 		; throw new Error ('third') }
 
-	;Oo (timetable,
-		o (remove_team_traces (request .team_id)),
-		o (add_team_requests (request .team_id) (request)) ,
-		oO (x => { ;fs .outputJSONSync (path_of ( [ __dirname, 'submissions.json' ] ), x) }))
+	;T (timetable
+	) (
+	[ remove_team_traces (request .team_id)
+	, add_team_requests (request .team_id) (request)
+	, x => { ;fs .outputJSONSync (path_of ( [ __dirname, 'submissions.json' ] ), x) } ])
 }
 var then = fn => p => p .then (fn)
-var timetable_to_occupations = timetable => Oo (timetable,
-	o (R .toPairs),
-	o (R .map (_x_ => Oo (R .last (_x_),
-		o (R . map (x => (x .length >= slot_capacity (R .head (_x_))))),
-		o (x => !! (x .first)? 'first'
-			:!! (x .second)? 'second'
-			:!! (x .third)? 'third'
-			: null ),
-		o (x => [R .head (_x_), x])))),
-	o (R .fromPairs))
-var remove_team_traces = id => slots => Oo (slots,
-	o (R .map (R .map (R .without ([ id ])))))
-var add_team_requests = id => stuff => slots => Oo (slots,
-	o (R .assoc (stuff .first, R .assoc ('first', R .union (slots [stuff .first] .first, [ id ]), slots [stuff .first]) )),
-	o (R .assoc (stuff .second, R .assoc ('second', R .union (slots [stuff .second] .second, [ id ]), slots [stuff .second]) )),
-	o (R .assoc (stuff .third, R .assoc ('third', R .union (slots [stuff .third] .third, [ id ]), slots [stuff .third]) )))
+var timetable_to_occupations = timetable => T (timetable) ([
+	R .toPairs,
+	R .map (_x_ => T (R .last (_x_)) ([
+		R .map (x => (x .length >= slot_capacity (R .head (_x_)))),
+		x => !! (x .first) ? 'first'
+			: !! (x .second) ? 'second'
+			: !! (x .third) ? 'third'
+			: null,
+		x => [R .head (_x_), x] ])),
+	R .fromPairs ])
+var remove_team_traces = id => slots => T (slots) (R .map (R .map (R .without ([ id ]))))
+var add_team_requests = id => stuff => slots => T (slots) ([
+	R .assoc (stuff .first, R .assoc ('first', R .union (slots [stuff .first] .first, [ id ]), slots [stuff .first])),
+	R .assoc (stuff .second, R .assoc ('second', R .union (slots [stuff .second] .second, [ id ]), slots [stuff .second])),
+	R .assoc (stuff .third, R .assoc ('third', R .union (slots [stuff .third] .third, [ id ]), slots [stuff .third])) ])
 var authenticate = x => y =>
 	fs .readFile ( path_of ([ __dirname , 'applicants.json' ]) )
 	.then (x => JSON .parse (x))
@@ -76,6 +67,18 @@ var authenticate = x => y =>
 		else {
 			;throw new Error ('Could not recognize team ID ' + x + ' and teacher email ' + y + '!') } })
 
+var filename_extension = filename =>
+	so ((_=_=>
+	!! parts .length > 0 ? '.' + R .last (parts)
+	: '',
+	where
+	, parts = filename .split ('.') )=>_)
+var filename_name = filename =>
+	so ((_=_=>
+	!! parts .length > 0 ? T (parts) ([ R .slice (0) (-1), R .join ('.') ])
+	: filename,
+	where
+	, parts = filename .split ('.') )=>_)
 
 
 
@@ -89,22 +92,41 @@ module .exports = require ('koa-qs') (new (require ('koa')) ())
 			.catch (function (err) {
 				console .error (err)
 				
-				ctx .type = 'application/json'
-				ctx .status = /*err .code || */500
+				;ctx .type = 'application/json'
+				;ctx .status = /*err .code || */500
 				//ctx .message = err .message || 'Internal Server Error'
-				ctx .body = {
+				;ctx .body = {
 					error:	err .message
 				}
-				if (debug)
-					ctx .body .stack = err .stack;
+				if (debug) {
+					;ctx .body .stack = err .stack; }
 			});
 	})
 	.use (require ('koa-morgan') ('combined'))
-	.use (require ('koa-bodyparser') ())
+	.use (require ('koa-body') ({ multipart: true }))
 	.use (require ('koa-json') ())
 	.use (require ('koa-router') ()
-		.post ('/send-submit', (ctx, next) => {
-			return Promise .resolve ()
+		.post ('/send-final', (ctx, next) => 
+			go
+			.then (_ => {
+				var body = ctx .request .body
+				var team_id = body .team_id
+				var teacher_email = body .teacher_email
+				var file = ctx .request .files .upload
+
+				return authenticate (team_id) (teacher_email)
+				.then (_ => {
+					var timestamp = (new Date) .toLocaleString ()
+					var filename = team_id + '-' + timestamp + filename_extension (file .name)
+					;fs .createReadStream (file .path) .pipe (fs .createWriteStream (path_of ( [ __dirname, 'final', filename ] )))
+					;console.log('uploading ' + file .name + ' as ' + filename) })
+				.then (_ => ({ ok: true }))
+				.catch (_x => ({ error: _x .message }))})
+			.then (x => { ;ctx .body = x })
+			//.then (next)
+		)
+		.post ('/send-submit', (ctx, next) => 
+			go
 			.then (() => {
 				var requests = ctx .request .body
 
@@ -131,12 +153,12 @@ module .exports = require ('koa-qs') (new (require ('koa')) ())
 				.catch (x => {
 					return { error: x .message } })})
 			.then (x => {
-				ctx .body = x
+				;ctx .body = x
 			})
 			//.then (next)
-		})
-		.post ('/send-apply', (ctx, next) => {
-			return Promise .resolve ()
+		)
+		.post ('/send-apply', (ctx, next) => 
+			go
 			.then (x => ctx .request .body)
 			.then (x => {
 				var uuid = require ('uuid/v4') ()
@@ -149,12 +171,12 @@ module .exports = require ('koa-qs') (new (require ('koa')) ())
 				return { error: 'An unexpected error occured' }
 			})
 			.then (x => {
-				ctx .body = x
+				;ctx .body = x
 			})
 			//.then (next)
-		})
-		.get ('/applications.csv', (ctx, next) => {{
-			return Promise .resolve ()
+		)
+		.get ('/applications.csv', (ctx, next) => 
+			go
 			.then (x => fs .readdir (path_of ( [ __dirname, 'applications' ] )))
 			.then (x => Promise .all (x .map (x => fs .readFile (path_of ( [ __dirname, 'applications', x ] )))))
 			.then (R .map (x => JSON .parse (x)))
@@ -181,26 +203,26 @@ module .exports = require ('koa-qs') (new (require ('koa')) ())
 				return R .concat ([index], apps .map (app => index .map (key => app [key])))})
 			.then (arrays =>
 				'\uFEFF' + arrays .map (array => array .map (x => '"' + x .split ('"') .join ('""') + '"') .join (',')) .join ('\r'))
-			.then (x => { ctx .body = x })
+			.then (x => { ;ctx .body = x })
 			//.then (next)
-		}})
-		.get ('/(chi|eng)/workshop', (ctx, next) => {{
-			return Promise .resolve ()
+		)
+		.get ('/(chi|eng)/workshop', (ctx, next) => 
+			go
 			.then (x => Promise .all ([
 				fs .readFile (path_of ( [ __dirname, ctx .url + '.html' ] )) ,
 				get_timetable ()
 			]))
-			.then (_x_ => Oo (R .head (_x_),
-				o (x => x . toString ()),
-				o (R .split ('...dynamic code...')),
-				o (R .join (
-					'slot_occupations (' + Oo (R .last (_x_),
-						o (timetable_to_occupations),
-						o (JSON . stringify))
-						+ ')' ))))
-			.then (x => { ctx .body = x })
+			.then (_x_ => T (R .head (_x_)) ([
+				x => x . toString (),
+				R .split ('...dynamic code...'),
+				R .join (
+					'slot_occupations (' + T (R .last (_x_)) ([
+						timetable_to_occupations,
+						JSON .stringify ])
+						+ ')' ) ]))
+			.then (x => { ;ctx .body = x })
 			//.then (next)
-		}})
+		)
 		.routes ()
 	)
 	.use (require ('koa-static') (__dirname, { extensions: ['html'] }))
