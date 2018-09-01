@@ -46,6 +46,41 @@ var embed = (x, y, z) =>
 			;node .setAttribute ('tabindex', (+ afters + 1))
 		}})))
 	//add to the base.html, the function to make black_box
+	;Oo (next .querySelectorAll ('#finale-winners #hint[for=video]rect, #finale-winners #hint[for=video] rect'),
+		oO (R .forEach (x => {{
+			x .parentElement .setAttribute ('fill', '#00000000')
+			x .parentElement .innerHTML += embed ('interviews', '<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL-3gobmUv_5yrxv0XgrMBBPTa5O8txSsO" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
+		}})))
+	;Oo (next .querySelectorAll ('#finale #hint[for=video]rect, #finale #hint[for=video] rect'),
+		oO (R .forEach (x => {{
+			x .setAttribute ('fill', '#00000000')
+			x .parentElement .innerHTML += embed ('launch-video', '<iframe width="560" height="315" src="https://www.youtube.com/embed/i9ajcg3Z30w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
+		}})))
+	;Oo (next .querySelectorAll ('#finale-interviews #hint[for=video]rect, #finale-interviews #hint[for=video] rect'),
+		oO (R .forEach (x => {{
+			x .parentElement .setAttribute ('fill', '#00000000')
+			x .parentElement .innerHTML += embed ('interviews', '<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL-3gobmUv_5y__UhDz-gtKqlOC6bjW9mk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
+		}})))
+	;Oo (next .querySelectorAll ('#sharing-akaishi #hint[for=video]rect, #sharing-akaishi #hint[for=video] rect'),
+		oO (R .forEach (x => {{
+			x .setAttribute ('fill', '#00000000')
+			x .parentElement .innerHTML += embed ('launch-video', '<iframe width="560" height="315" src="https://www.youtube.com/embed/u__W5kGbZlA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
+		}})))
+	;Oo (next .querySelectorAll ('#sharing-reid #hint[for=video]rect, #sharing-reid #hint[for=video] rect'),
+		oO (R .forEach (x => {{
+			x .setAttribute ('fill', '#00000000')
+			x .parentElement .innerHTML += embed ('launch-video', '<iframe width="560" height="315" src="https://www.youtube.com/embed/VZB75EyZAsM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
+		}})))
+	;Oo (next .querySelectorAll ('#sharing-video #hint[for=video]rect, #sharing-video #hint[for=video] rect'),
+		oO (R .forEach (x => {{
+			x .setAttribute ('fill', '#00000000')
+			x .parentElement .innerHTML += embed ('launch-video', '<iframe width="560" height="315" src="https://www.youtube.com/embed/SKJRhpddrqg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
+		}})))
+	;Oo (next .querySelectorAll ('#launch-interviews #hint[for=video]rect, #launch-interviews #hint[for=video] rect'),
+		oO (R .forEach (x => {{
+			x .parentElement .setAttribute ('fill', '#00000000')
+			x .parentElement .innerHTML += embed ('interviews', '<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL-3gobmUv_5zn84HuoAFT65hTlhG0FHd4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
+		}})))
 	;Oo (next .querySelectorAll ('#launch-video #hint[for=video]rect, #launch-video #hint[for=video] rect'),
 		oO (R .forEach (x => {{
 			x .setAttribute ('fill', '#00000000')
@@ -60,11 +95,6 @@ var embed = (x, y, z) =>
 		oO (R .forEach (x => {{
 			x .parentElement .setAttribute ('fill', '#00000000')
 			x .parentElement .innerHTML += embed ('red-cliff', '<iframe width="560" height="315" src="https://www.youtube.com/embed/h_kqgzjSA4w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
-		}})))
-	;Oo (next .querySelectorAll ('#interviews #hint[for=video]rect, #interviews #hint[for=video] rect'),
-		oO (R .forEach (x => {{
-			x .parentElement .setAttribute ('fill', '#00000000')
-			x .parentElement .innerHTML += embed ('interviews', '<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL-3gobmUv_5zn84HuoAFT65hTlhG0FHd4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
 		}})))
 	;Oo (next .querySelectorAll ('#finalists #hint[for=video]rect, #finalists #hint[for=video] rect'),
 		oO (R .forEach (x => {{

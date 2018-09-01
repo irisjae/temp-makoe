@@ -1,5 +1,4 @@
-var auto = require ('__auto')
-auto (() => {
+module .exports = auto => { with (auto .window) { return (() => {
 
 var Oo = require ('o-o-o-o-o') .Oo;
 var o = require ('o-o-o-o-o') .o;
@@ -103,4 +102,4 @@ var embed = (x, y, z) =>
 			x .parentElement .innerHTML += embed ('finalists', '<iframe width="640" height="360" src="https://www.youtube.com/embed/wG5XjDhFFug?ecver=2" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
 		}})))
         return next
-})
+}) () }}

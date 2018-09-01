@@ -8,7 +8,7 @@ var path = require ('path');
 
 
 
-var root_path = Oo (require ('child_process') .execSync ('cd ' + __dirname + '; git rev-parse --show-toplevel') .toString (),
+var root_path = Oo (require ('child_process') .execSync ('bash -c \'cd "' + __dirname + '"; function find_neph { [ -f ".neph" ] && pwd || ([ "$(pwd)" == "/" ] && echo "$(pwd)" || (pushd .. > /dev/null; find_neph; popd > /dev/null;) ) }; find_neph\'') .toString (),
 	o (R .split ('\n')),
 	o (R .head));
 var under_root = R .map (R .cond ([
