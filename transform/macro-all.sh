@@ -1,9 +1,11 @@
 cat << 'EOF' | while read c; do echo "$c"; ./transform/macro.sh "$c"; done;
+chi/medalists
 chi/rules
 chi/home
 chi/contact
 chi/news
 chi/activities
+eng/medalists
 eng/rules
 eng/home
 eng/contact
